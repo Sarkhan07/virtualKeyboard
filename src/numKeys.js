@@ -8,7 +8,7 @@ export function numKeyBoards() {
 
         for (let i = 0; i < Nums.length; i++) {
             
-            result +=  '<div class="numKeys" data="' + Num[i] + '" >'+ String.fromCharCode(Nums[i]) + '</div>';
+            result +=  '<div class="numKeys" data="' + Num[i] + '" data="' + Nums[i] + '" >'+ String.fromCharCode(Nums[i]) + '</div>';
             if (i == 12 ) {
                 result += '<div class="remove"></div>';
             }
