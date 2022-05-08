@@ -1,4 +1,5 @@
 const Nums = [96, 49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 45, 61];
+const Num = ["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "="];
 const Symbols = ["~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+"];
 
 export function numKeyBoards() {
@@ -7,7 +8,7 @@ export function numKeyBoards() {
 
         for (let i = 0; i < Nums.length; i++) {
             
-            result +=  '<div class="numKeys" data="' + Nums[i] + '" >'+ String.fromCharCode(Nums[i]) + '</div>';
+            result +=  '<div class="numKeys" data="' + Num[i] + '" >'+ String.fromCharCode(Nums[i]) + '</div>';
             if (i == 12 ) {
                 result += '<div class="remove"></div>';
             }
@@ -40,8 +41,7 @@ export function numKeyBoards() {
 
 
         document.onkeypress = function (event) {
-            console.log( event.code);
-            console.log(event.keyCode);
+            console.log( event.key);
             document.querySelectorAll('.keyboards .numKeys').forEach(function(element) {
                 element.classList.remove('active');
             });
@@ -49,9 +49,25 @@ export function numKeyBoards() {
             document.querySelector('.keyboards .numKeys[data="' + event.keyCode + '"]').classList.add('active');
         }
 
+        document.querySelectorAll('.keyboards .numKeys').forEach(function(element) {
+            element.onclick = function (event) {
+                document.querySelectorAll('.keyboards .numKeys').forEach(function(element) {
+                    element.classList.remove('active');
+                });
         
+                let code = this.getAttribute('data');
+                this.classList.add('active');
+                console.log(code);
+            }
+        
+        
+        }
 
-}
+        
+        
+)};
+
+
 
 // echo "# keyboard" >> README.md
 // git init
