@@ -1,0 +1,77 @@
+.keyboards {
+	display: block;
+	border: 2px solid black;
+	padding: 5px;
+}
+
+.numkeyboards {
+	position: relative;
+}
+
+.symkeyboard {
+	position: absolute;
+	left: 8px;
+	bottom: 56px;
+}
+
+.keyboards::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+.keys {
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 10px;
+	border-radius: 10%;
+	float: left;
+	text-align: center;
+	line-height: 2.5;
+	background-color: rgb(58, 66, 78);
+	color: white;
+}
+
+.numKeys {
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 10px;
+	border-radius: 10%;
+	float: left;
+	text-align: center;
+	line-height: 2.5;
+	background-color: rgb(58, 66, 78);
+	color: white;
+
+}
+
+.numKey {
+
+	color: white;
+	float: left;
+	margin-right: 74px;
+
+}
+
+.p {
+	position: absolute;
+	color: white;
+	right: 390px;
+	top: 87px;
+}
+
+
+.remove {
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.active {
+	background-color: orange;
+}
