@@ -19,6 +19,9 @@ export function bottomKey() {
     let rightShift = document.createElement('div');
     let tab = document.createElement('div');
     let caps = document.createElement('div');
+    let enter = document.createElement('div');
+    let backspace = document.createElement('div');
+    let del = document.createElement('div');
 
     bottomKeys.className = "bottom_keys";
     ctrl.className = "ctrl";
@@ -35,6 +38,10 @@ export function bottomKey() {
     rightShift.className = "right_shift";
     tab.className = "tab";
     caps.className = "caps";
+    enter.className = "enter";
+    backspace.className = "back";
+    del.className = "del";
+
     
 
         // div.innerHTML = result;
@@ -54,6 +61,10 @@ export function bottomKey() {
         bottomKeys.prepend(rightShift);
         bottomKeys.append(tab);
         bottomKeys.append(caps);
+        
+        bottomKeys.append(backspace);
+        bottomKeys.append(enter);
+        bottomKeys.append(del);
 
     keyboards.prepend(bottomKeys);
 
@@ -75,12 +86,18 @@ export function bottomKey() {
     rightShift.innerHTML = "Shift";
     tab.innerHTML = "Tab";
     caps.innerHTML = "Caps Lock";
+    backspace.innerHTML = "<= Backspace";
+    enter.innerHTML = "<| Enter";
+    del.innerHTML = "Del";
     
 
     document.onkeydown = function(e) {
         switch(e.keyCode)
         {
           case 38:
+            del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
+            enter.classList.remove("left_active");
             caps.classList.remove('left_active');
             tab.classList.remove('left_active');
             rightAlt.classList.remove("left_active");
@@ -97,6 +114,9 @@ export function bottomKey() {
 
           break;
           case 40:
+            del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
+            enter.classList.remove("left_active");
             caps.classList.remove('left_active');
             tab.classList.remove('left_active');
             rightAlt.classList.remove("left_active");
@@ -112,6 +132,9 @@ export function bottomKey() {
           ctrl.classList.remove('left_active');
           break;
           case 37:
+            del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
+            enter.classList.remove("left_active");
             caps.classList.remove('left_active');
             tab.classList.remove('left_active');
             rightAlt.classList.remove("left_active");
@@ -127,6 +150,9 @@ export function bottomKey() {
           ctrl.classList.remove('left_active');
           break;
           case 39:
+            del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
+            enter.classList.remove("left_active");
             caps.classList.remove('left_active');
             tab.classList.remove('left_active');
             rightAlt.classList.remove("left_active");
@@ -142,20 +168,76 @@ export function bottomKey() {
             ctrl.classList.remove('left_active');
           break;
           case 46:
-          alert('delete');
-
-
+          del.classList.add("del_a");
+          backspace.classList.remove("left_active");
+          enter.classList.remove("left_active");
+          caps.classList.remove('left_active');
+          tab.classList.remove('left_active');
+          rightAlt.classList.remove("left_active");
+          rightShift.classList.remove('left_active');
+          shift.classList.remove('left_active');
+          win.classList.remove("left_active");
+          alt.classList.remove("left_active");
+          rightCtrl.classList.remove('left_active');
+          right.classList.remove('left_active');
+          left.classList.remove('left_active');
+          down.classList.remove('left_active');
+          up.classList.remove('left_active');
+          ctrl.classList.remove('left_active');
           break;
           case 8:
-          alert('backspace');
+            del.classList.remove("del_a");
+              backspace.classList.add("left_active");
+            enter.classList.remove("left_active");
+            caps.classList.remove('left_active');
+               tab.classList.remove('left_active');
+               rightAlt.classList.remove("left_active");
+               rightShift.classList.remove('left_active');
+               shift.classList.remove('left_active');
+               rightCtrl.classList.remove('left_active');
+               win.classList.remove('left_active');
+               left.classList.remove('left_active');
+               down.classList.remove('left_active');
+               up.classList.remove('left_active');
+               ctrl.classList.remove('left_active');
           break;
-          case 13:
-          alert('ENTER');
-          break;
-          case 17:
+          case 16:
+            del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
             caps.classList.remove('left_active');
             tab.classList.remove('left_active');
             rightAlt.classList.remove("left_active");
+            rightShift.classList.add('left_active');
+            rightCtrl.classList.remove('left_active');
+            shift.classList.add('left_active');
+            left.classList.remove('left_active');
+            down.classList.remove('left_active');
+            up.classList.remove('left_active');
+            ctrl.classList.remove('left_active'); 
+            break;
+          case 13:
+            del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
+         enter.classList.add("left_active");
+         caps.classList.remove('left_active');
+         tab.classList.remove('left_active');
+            rightShift.classList.remove('left_active');
+         shift.classList.remove('left_active');
+         win.classList.remove("left_active");
+         alt.classList.remove("left_active");
+         rightAlt.classList.remove("left_active");
+         rightCtrl.classList.remove('left_active');
+         ctrl.classList.remove('left_active');
+         left.classList.remove('left_active');
+         right.classList.remove('left_active');
+         down.classList.remove('left_active');
+          break;
+          case 17:
+            del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
+            enter.classList.remove("left_active");
+            caps.classList.remove('left_active');
+            tab.classList.remove('left_active');
             rightShift.classList.remove('left_active');
             shift.classList.remove('left_active');
             win.classList.remove("left_active");
@@ -168,6 +250,9 @@ export function bottomKey() {
             down.classList.remove('left_active');
           break;
           case 18:
+            del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
+            enter.classList.remove("left_active");
             caps.classList.remove('left_active');
             tab.classList.remove('left_active');
             rightShift.classList.remove('left_active');
@@ -181,10 +266,10 @@ export function bottomKey() {
         up.classList.remove('left_active');
         ctrl.classList.remove('left_active');
           break;
-          case 16:
-         
-          break;
           case 9:
+            del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
+            enter.classList.remove("left_active");
             caps.classList.remove('left_active');
          tab.classList.add('left_active');
          rightAlt.classList.remove("left_active");
@@ -197,6 +282,9 @@ export function bottomKey() {
          ctrl.classList.remove('left_active');
           break;
           case 20:
+            del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
+            enter.classList.remove("left_active");
          caps.classList.add('left_active');
             tab.classList.remove('left_active');
             rightAlt.classList.remove("left_active");
@@ -210,6 +298,9 @@ export function bottomKey() {
             ctrl.classList.remove('left_active');
           break;   
           case 91:
+            del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
+            enter.classList.remove("left_active");
             caps.classList.remove('left_active');
             tab.classList.remove('left_active');
             rightAlt.classList.remove("left_active");
@@ -225,18 +316,7 @@ export function bottomKey() {
             break;  
                
         }
-        if (e.shiftKey)
-        {   caps.classList.remove('left_active');
-            tab.classList.remove('left_active');
-            rightAlt.classList.remove("left_active");
-            rightShift.classList.add('left_active');
-            rightCtrl.classList.remove('left_active');
-            shift.classList.add('left_active');
-            left.classList.remove('left_active');
-            down.classList.remove('left_active');
-            up.classList.remove('left_active');
-            ctrl.classList.remove('left_active');
-        }
+       
 
        
   
