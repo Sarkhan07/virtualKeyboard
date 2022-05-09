@@ -73,7 +73,7 @@
 }
 
 .active {
-	background-color: orange;
+	background-color: rgb(149, 205, 198);
 }
 
 #txt {
@@ -89,4 +89,10 @@
 	font-weight: 700;
 
 }
-/*# sourceMappingURL=styles.css.map*/
+
+
+
+.left_key {
+	background-color: aqua;
+	width: 20px;
+}

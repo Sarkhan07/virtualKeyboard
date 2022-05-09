@@ -11,7 +11,7 @@ export function numKeyBoards() {
             result +=  '<div class="numKeys" title="' + Num[i] + '" " " data="' + Nums[i] + '" >'+ String.fromCharCode(Nums[i]) + '</div>';
             if (i == 12 ) {
                 result += '<div class="remove"></div>';
-            }
+            } 
 
 
         }
