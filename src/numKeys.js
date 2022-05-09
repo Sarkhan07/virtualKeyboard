@@ -63,7 +63,9 @@ export function numKeyBoards() {
             this.classList.add('active');
 
             console.log(code);
-            document.getElementById('txt').value = code;
+            document.getElementById('txt').value += code;
+
+            
             
         }		
     

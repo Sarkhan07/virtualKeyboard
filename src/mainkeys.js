@@ -36,6 +36,7 @@ export function mainKeyBoards() {
 	keyboards.before(div);
 
 	div.innerHTML = '<textarea id="txt" name="txt" rows="4" cols="50">';
+	let txtAreaValue = 
 
 	
 	//
@@ -64,7 +65,7 @@ export function mainKeyBoards() {
 
 		        console.log(code);
 
-				document.getElementById('txt').value = code;
+				document.getElementById('txt').value += code;
 
 				// textAreaValue.value = code;
 				
