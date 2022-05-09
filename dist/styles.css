@@ -1,17 +1,22 @@
 .keyboards {
+	position: relative;
 	display: block;
 	border: 2px solid black;
 	padding: 5px;
+	height: 406px;
 }
 
 .numkeyboards {
 	position: relative;
+	left: -85px;
 }
+
 
 .symkeyboard {
 	position: absolute;
-	left: 8px;
-	bottom: 56px;
+	left: 97px;
+	bottom: 55px;
+	z-index: 2;
 }
 
 .keyboards::after {
@@ -47,6 +52,8 @@
 	line-height: 2.5;
 	background-color: rgb(58, 66, 78);
 	color: white;
+	position: relative;
+	right: -84px;
 
 }
 
@@ -73,7 +80,7 @@
 }
 
 .active {
-	background-color: rgb(149, 205, 198);
+	background-color: rgb(176, 148, 162);
 }
 
 #txt {
@@ -92,7 +99,157 @@
 
 
 
-.left_key {
-	background-color: aqua;
-	width: 20px;
+.left_keys {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	bottom: 92px;
 }
+
+
+.tab,
+.caps,
+.shift {
+	width: 52px;
+	height: 52px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 10px;
+	border-radius: 10%;
+	float: left;
+	text-align: center;
+	line-height: 2.5;
+	background-color: rgb(58, 66, 78);
+	color: white;
+}
+
+
+
+.bottom_keys {
+	position: absolute;
+	bottom: 6px;
+}
+
+.ctrl,
+.win,
+.alt,
+.right_alt,
+.right_ctrl {
+	width: 52px;
+	height: 52px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 10px;
+	border-radius: 10%;
+	float: left;
+	text-align: center;
+	line-height: 2.5;
+	background-color: rgb(58, 66, 78);
+	color: white;
+}
+
+.space {
+	width: 450px;
+	height: 52px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 10px;
+	float: left;
+	text-align: center;
+	line-height: 2.5;
+	background-color: rgb(58, 66, 78);
+	color: white;
+}
+
+
+.left,
+.down,
+.right {
+
+	width: 52px;
+	height: 52px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 10px;
+	border-radius: 10%;
+	float: left;
+	text-align: center;
+	line-height: 2.5;
+	background-color: rgb(58, 66, 78);
+	color: white;
+	position: relative;
+
+}
+
+
+.right_keys {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	bottom: 11px;
+	right: 126px;
+}
+
+
+.enter {
+	width: 100px;
+	height: 52px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 10px;
+	border-radius: 10%;
+	float: left;
+	text-align: center;
+	line-height: 2.5;
+	background-color: rgb(58, 66, 78);
+	color: white;
+}
+
+.right_shift {
+	width: 120px;
+	height: 52px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 10px;
+	border-radius: 10%;
+	float: left;
+	text-align: center;
+	line-height: 2.5;
+	background-color: rgb(58, 66, 78);
+	color: white;
+}
+
+.up {
+	width: 52px;
+	height: 52px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 10px;
+	border-radius: 10%;
+	float: left;
+	text-align: center;
+	line-height: 2.5;
+	background-color: rgb(58, 66, 78);
+	color: white;
+	position: relative;
+	left: -95px;
+	bottom: 78px;
+}
+
+.back {
+	width: 117px;
+	height: 52px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 10px;
+	border-radius: 10%;
+	float: left;
+	text-align: center;
+	line-height: 2.5;
+	background-color: rgb(58, 66, 78);
+	color: white;
+	position: relative;
+	left: -2px;
+	top: -82px;
+}
+/*# sourceMappingURL=styles.css.map*/
