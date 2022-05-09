@@ -1,3 +1,6 @@
+
+
+
 export function bottomKey() {
 
     let keyboards = document.querySelector('.keyboards');
@@ -38,6 +41,13 @@ export function bottomKey() {
         bottomKeys.append(right);
 
     keyboards.prepend(bottomKeys);
+
+    document.querySelector('[data="32"]').style.left = "-556px"; 
+
+    document.querySelector('[data="32"]').style.top = "85px"; 
+    document.querySelector('[data="32"]').style.width = "450px"; 
+
+
 
 
 

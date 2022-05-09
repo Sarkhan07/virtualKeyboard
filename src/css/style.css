@@ -1,9 +1,13 @@
 .keyboards {
 	position: relative;
+	width: 1322px;
 	display: block;
 	border: 2px solid black;
 	padding: 5px;
 	height: 406px;
+	margin: 0 auto;
+	background-color: aqua;
+
 }
 
 .numkeyboards {
@@ -132,9 +136,7 @@
 
 .ctrl,
 .win,
-.alt,
-.right_alt,
-.right_ctrl {
+.alt {
 	width: 52px;
 	height: 52px;
 	border: 1px solid black;
@@ -148,18 +150,47 @@
 	color: white;
 }
 
-.space {
-	width: 450px;
+.right_alt,
+.right_ctrl {
+	width: 52px;
 	height: 52px;
 	border: 1px solid black;
 	margin: 3px;
 	padding: 10px;
+	border-radius: 10%;
 	float: left;
 	text-align: center;
 	line-height: 2.5;
 	background-color: rgb(58, 66, 78);
 	color: white;
+	position: relative;
+	left: 487px;
 }
+
+
+
+.space {
+	width: 450px;
+	height: 52px;
+	/* border: 1px solid black; */
+	margin: 3px;
+	padding: 10px;
+	float: left;
+	/* text-align: center;
+	line-height: 2.5;
+	background-color: rgb(58, 66, 78);
+	color: white; */
+	position: absolute;
+	left: 246px;
+	bottom: 0;
+
+}
+
+.numKey[tytle=" "] {
+	position: relative;
+}
+
+
 
 
 .left,
@@ -178,6 +209,7 @@
 	background-color: rgb(58, 66, 78);
 	color: white;
 	position: relative;
+	right: -493px;
 
 }
 
@@ -186,7 +218,7 @@
 	position: absolute;
 	display: flex;
 	flex-direction: column;
-	bottom: 11px;
+	bottom: 90px;
 	right: 126px;
 }
 
@@ -231,9 +263,10 @@
 	line-height: 2.5;
 	background-color: rgb(58, 66, 78);
 	color: white;
-	position: relative;
-	left: -95px;
-	bottom: 78px;
+	position: absolute;
+	left: -78px;
+	bottom: 2px;
+
 }
 
 .back {
