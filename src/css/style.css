@@ -22,8 +22,8 @@
 
 
 .keys {
-	width: 50px;
-	height: 50px;
+	width: 52px;
+	height: 52px;
 	border: 1px solid black;
 	margin: 3px;
 	padding: 10px;
@@ -36,8 +36,8 @@
 }
 
 .numKeys {
-	width: 50px;
-	height: 50px;
+	width: 52px;
+	height: 52px;
 	border: 1px solid black;
 	margin: 3px;
 	padding: 10px;
@@ -74,4 +74,18 @@
 
 .active {
 	background-color: orange;
+}
+
+#txt {
+
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	line-height: 10px;
+	font-weight: 700;
+
 }

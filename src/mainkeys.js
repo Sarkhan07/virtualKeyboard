@@ -4,6 +4,7 @@ const little = [113, 119, 101, 114, 116, 121, 117, 105, 111, 112, 91, 93, 92, 97
 
 
 
+
 export function mainKeyBoards() {
 	let result = '';
 	for (let i = 0; i < allKeys.length; i++) {
@@ -15,12 +16,12 @@ export function mainKeyBoards() {
 		else if (i == 25) {
 			result += '<p class = "p">/</p>';
 		} 
-		result +=  '<div class="numKeys" data="' + littles[i] + '" data="' + little[i] + '" >'+ String.fromCharCode(allKeys[i]) + '</div>';
+		result +=  '<div class="numKeys" title="' + littles[i] + '" data="' + little[i] + '" >'+ String.fromCharCode(allKeys[i]) + '</div>';
 	}
 
 
 	let keyboards = document.createElement('div');
-
+	
 
 
 	keyboards.className = "keyboards";
@@ -28,6 +29,18 @@ export function mainKeyBoards() {
 
 	document.body.append(keyboards);
 
+	//textarea
+
+	let div = document.createElement('div');
+	div.className = "txtarea";
+	keyboards.before(div);
+
+	div.innerHTML = '<textarea id="txt" name="txt" rows="4" cols="50">';
+
+	
+	//
+
+	//keypress
 
 	keyboards.onkeypress = function (event) {
 		console.log( event.key);
@@ -38,27 +51,37 @@ export function mainKeyBoards() {
 		
 	};
 
+	// onclick
+
 	document.querySelectorAll('.keyboards .keys').forEach(function(element) {
 		    element.onclick = function (event) {
 		        document.querySelectorAll('.keyboards .keys').forEach(function(element) {
 		            element.classList.remove('active');
 		        });
 		
-		        let code = this.getAttribute('data');
+		        let code = this.getAttribute("title");
 		        this.classList.add('active');
+
 		        console.log(code);
-		    }
+
+				document.getElementById('txt').value = code;
+
+				// textAreaValue.value = code;
+				
+		    }		
 		
-		
-		}
+		});
 
-	)};
-
+	};
 
 
 
-// const allKeys = [];
-// document.onkeypress = function(event) {
-// 	allKeys.push(event.charCode);
-// 	console.log(allKeys)
-// }
+
+
+
+	// const allKeys = [];
+	// document.onkeypress = function(event) {
+	// 	allKeys.push(event.charCode);
+	// 	console.log(allKeys)
+	// }
+	

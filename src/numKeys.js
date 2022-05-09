@@ -8,7 +8,7 @@ export function numKeyBoards() {
 
         for (let i = 0; i < Nums.length; i++) {
             
-            result +=  '<div class="numKeys" data="' + Num[i] + '" data="' + Nums[i] + '" >'+ String.fromCharCode(Nums[i]) + '</div>';
+            result +=  '<div class="numKeys" title="' + Num[i] + '" " " data="' + Nums[i] + '" >'+ String.fromCharCode(Nums[i]) + '</div>';
             if (i == 12 ) {
                 result += '<div class="remove"></div>';
             }
@@ -39,6 +39,8 @@ export function numKeyBoards() {
         
         div.prepend(divs);
 
+        
+
 
         document.onkeypress = function (event) {
             console.log( event.key);
@@ -49,23 +51,40 @@ export function numKeyBoards() {
             document.querySelector('.keyboards .numKeys[data="' + event.keyCode + '"]').classList.add('active');
         }
 
-        document.querySelectorAll('.keyboards .numKeys').forEach(function(element) {
-            element.onclick = function (event) {
-                document.querySelectorAll('.keyboards .numKeys').forEach(function(element) {
-                    element.classList.remove('active');
-                });
-        
-                let code = this.getAttribute('data');
-                this.classList.add('active');
-                console.log(code);
-            }
-        
-        
-        }
+     // onclick
 
+	document.querySelectorAll('.keyboards .numKeys').forEach(function(element) {
+        element.onclick = function (event) {
+            document.querySelectorAll('.keyboards .numKeys').forEach(function(element) {
+                element.classList.remove('active');
+            });
+    
+            let code = this.getAttribute("title");
+            this.classList.add('active');
+
+            console.log(code);
+            document.getElementById('txt').value = code;
+            
+        }		
+    
+    });
+
+
+        // document.querySelectorAll('.keyboards .numKeys').forEach(function(element) {
+        //     element.onclick = function (event) {
+        //         document.querySelectorAll('.keyboards .numKeys').forEach(function(element) {
+        //             element.classList.remove('active');
+        //         });
+        
+        //         let code = this.getAttribute('title');
+        //         this.classList.add('active');
+        //         console.log(code);
+        //     }
         
         
-)};
+        // });
+
+};
 
 
 
