@@ -111,8 +111,37 @@
 }
 
 
-.tab,
-.caps,
+.tab {
+	width: 52px;
+	height: 52px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 10px;
+	border-radius: 10%;
+	float: left;
+	text-align: center;
+	line-height: 2.5;
+	background-color: rgb(58, 66, 78);
+	color: white;
+	position: absolute;
+	bottom: 246px;
+}
+
+.caps {
+	width: 52px;
+	height: 52px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 10px;
+	border-radius: 10%;
+	float: left;
+	text-align: center;
+	background-color: rgb(58, 66, 78);
+	color: white;
+	position: absolute;
+	bottom: 164px;
+}
+
 .shift {
 	width: 52px;
 	height: 52px;
@@ -125,7 +154,12 @@
 	line-height: 2.5;
 	background-color: rgb(58, 66, 78);
 	color: white;
+	position: absolute;
+	bottom: 85px;
+	left: 0px;
 }
+
+
 
 
 
@@ -209,7 +243,7 @@
 	background-color: rgb(58, 66, 78);
 	color: white;
 	position: relative;
-	right: -493px;
+	right: -570px;
 
 }
 
@@ -235,6 +269,9 @@
 	line-height: 2.5;
 	background-color: rgb(58, 66, 78);
 	color: white;
+	position: absolute;
+	left: -87px;
+	top: -80px;
 }
 
 .right_shift {
@@ -249,6 +286,9 @@
 	line-height: 2.5;
 	background-color: rgb(58, 66, 78);
 	color: white;
+	position: absolute;
+	left: 899px;
+	bottom: 81px;
 }
 
 .up {
@@ -264,8 +304,8 @@
 	background-color: rgb(58, 66, 78);
 	color: white;
 	position: absolute;
-	left: -78px;
-	bottom: 2px;
+	right: -490px;
+	bottom: 80px;
 
 }
 
@@ -283,6 +323,10 @@
 	color: white;
 	position: relative;
 	left: -2px;
-	top: -82px;
+	top: -242px;
+}
+
+.left_active {
+	background-color: rgb(176, 148, 162);
 }
 /*# sourceMappingURL=styles.css.map*/
