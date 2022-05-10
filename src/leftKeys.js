@@ -10,7 +10,7 @@ export function leftKey() {
     leftKeys.className = "left_keys";
  
 
-        // div.innerHTML = result;
+     
 
        
 

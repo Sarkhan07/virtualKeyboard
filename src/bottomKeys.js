@@ -111,6 +111,24 @@ export function bottomKey() {
             down.classList.remove('left_active');
             up.classList.add('left_active');
             ctrl.classList.remove('left_active');
+            up.onclick = function() {
+              del.classList.remove("del_a");
+              backspace.classList.remove("left_active");
+              enter.classList.remove("left_active");
+              caps.classList.remove('left_active');
+              tab.classList.remove('left_active');
+              rightAlt.classList.remove("left_active");
+              rightShift.classList.remove('left_active');
+              shift.classList.remove('left_active');
+                win.classList.remove("left_active");
+              alt.classList.remove("left_active");
+              rightCtrl.classList.remove('left_active');
+              left.classList.remove('left_active');
+              right.classList.remove('left_active');
+              down.classList.remove('left_active');
+              up.classList.add('left_active');
+              ctrl.classList.remove('left_active');
+            }
 
           break;
           case 40:
@@ -130,6 +148,24 @@ export function bottomKey() {
           right.classList.remove('left_active');
           up.classList.remove('left_active');
           ctrl.classList.remove('left_active');
+          down.onclick = function() {
+            del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
+            enter.classList.remove("left_active");
+            caps.classList.remove('left_active');
+            tab.classList.remove('left_active');
+            rightAlt.classList.remove("left_active");
+            rightShift.classList.remove('left_active');
+            shift.classList.remove('left_active');
+            win.classList.remove("left_active");
+            alt.classList.remove("left_active");
+            rightCtrl.classList.remove('left_active');
+          down.classList.add('left_active');
+          left.classList.remove('left_active');
+          right.classList.remove('left_active');
+          up.classList.remove('left_active');
+          ctrl.classList.remove('left_active');
+          }
           break;
           case 37:
             del.classList.remove("del_a");
@@ -148,6 +184,24 @@ export function bottomKey() {
           right.classList.remove('left_active');
           up.classList.remove('left_active');
           ctrl.classList.remove('left_active');
+          left.onclick = function() {
+            del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
+            enter.classList.remove("left_active");
+            caps.classList.remove('left_active');
+            tab.classList.remove('left_active');
+            rightAlt.classList.remove("left_active");
+            rightShift.classList.remove('left_active');
+            shift.classList.remove('left_active');
+            win.classList.remove("left_active");
+            alt.classList.remove("left_active");
+            rightCtrl.classList.remove('left_active');
+          left.classList.add('left_active');
+          down.classList.remove('left_active');
+          right.classList.remove('left_active');
+          up.classList.remove('left_active');
+          ctrl.classList.remove('left_active');
+          }
           break;
           case 39:
             del.classList.remove("del_a");
@@ -166,6 +220,25 @@ export function bottomKey() {
             down.classList.remove('left_active');
             up.classList.remove('left_active');
             ctrl.classList.remove('left_active');
+
+            right.onclick = function() {
+              del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
+            enter.classList.remove("left_active");
+            caps.classList.remove('left_active');
+            tab.classList.remove('left_active');
+            rightAlt.classList.remove("left_active");
+            rightShift.classList.remove('left_active');
+            shift.classList.remove('left_active');
+            win.classList.remove("left_active");
+            alt.classList.remove("left_active");
+            rightCtrl.classList.remove('left_active');
+            right.classList.add('left_active');
+            left.classList.remove('left_active');
+            down.classList.remove('left_active');
+            up.classList.remove('left_active');
+            ctrl.classList.remove('left_active');
+            }
           break;
           case 46:
           del.classList.add("del_a");
@@ -184,6 +257,25 @@ export function bottomKey() {
           down.classList.remove('left_active');
           up.classList.remove('left_active');
           ctrl.classList.remove('left_active');
+
+          del.onclick = function() {
+            del.classList.add("del_a");
+          backspace.classList.remove("left_active");
+          enter.classList.remove("left_active");
+          caps.classList.remove('left_active');
+          tab.classList.remove('left_active');
+          rightAlt.classList.remove("left_active");
+          rightShift.classList.remove('left_active');
+          shift.classList.remove('left_active');
+          win.classList.remove("left_active");
+          alt.classList.remove("left_active");
+          rightCtrl.classList.remove('left_active');
+          right.classList.remove('left_active');
+          left.classList.remove('left_active');
+          down.classList.remove('left_active');
+          up.classList.remove('left_active');
+          ctrl.classList.remove('left_active');
+          }
           break;
           case 8:
             del.classList.remove("del_a");
@@ -200,6 +292,23 @@ export function bottomKey() {
                down.classList.remove('left_active');
                up.classList.remove('left_active');
                ctrl.classList.remove('left_active');
+
+               backspace.onclick = function() {
+                del.classList.remove("del_a");
+                backspace.classList.add("left_active");
+              enter.classList.remove("left_active");
+              caps.classList.remove('left_active');
+                 tab.classList.remove('left_active');
+                 rightAlt.classList.remove("left_active");
+                 rightShift.classList.remove('left_active');
+                 shift.classList.remove('left_active');
+                 rightCtrl.classList.remove('left_active');
+                 win.classList.remove('left_active');
+                 left.classList.remove('left_active');
+                 down.classList.remove('left_active');
+                 up.classList.remove('left_active');
+                 ctrl.classList.remove('left_active');
+              }
           break;
           case 16:
             del.classList.remove("del_a");
@@ -214,6 +323,21 @@ export function bottomKey() {
             down.classList.remove('left_active');
             up.classList.remove('left_active');
             ctrl.classList.remove('left_active'); 
+
+            rightShift.onclick = function() {
+              del.classList.remove("del_a");
+              backspace.classList.remove("left_active");
+              caps.classList.remove('left_active');
+              tab.classList.remove('left_active');
+              rightAlt.classList.remove("left_active");
+              rightShift.classList.add('left_active');
+              rightCtrl.classList.remove('left_active');
+              shift.classList.add('left_active');
+              left.classList.remove('left_active');
+              down.classList.remove('left_active');
+              up.classList.remove('left_active');
+              ctrl.classList.remove('left_active'); 
+            }
             break;
           case 13:
             del.classList.remove("del_a");
@@ -231,6 +355,25 @@ export function bottomKey() {
          left.classList.remove('left_active');
          right.classList.remove('left_active');
          down.classList.remove('left_active');
+
+
+         enter.onclick = function() {
+          del.classList.remove("del_a");
+          backspace.classList.remove("left_active");
+       enter.classList.add("left_active");
+       caps.classList.remove('left_active');
+       tab.classList.remove('left_active');
+          rightShift.classList.remove('left_active');
+       shift.classList.remove('left_active');
+       win.classList.remove("left_active");
+       alt.classList.remove("left_active");
+       rightAlt.classList.remove("left_active");
+       rightCtrl.classList.remove('left_active');
+       ctrl.classList.remove('left_active');
+       left.classList.remove('left_active');
+       right.classList.remove('left_active');
+       down.classList.remove('left_active');
+        }
           break;
           case 17:
             del.classList.remove("del_a");
@@ -248,6 +391,25 @@ export function bottomKey() {
             left.classList.remove('left_active');
             right.classList.remove('left_active');
             down.classList.remove('left_active');
+
+            
+            ctrl.onclick = function() {
+              del.classList.remove("del_a");
+              backspace.classList.remove("left_active");
+              enter.classList.remove("left_active");
+              caps.classList.remove('left_active');
+              tab.classList.remove('left_active');
+              rightShift.classList.remove('left_active');
+              shift.classList.remove('left_active');
+              win.classList.remove("left_active");
+              alt.classList.remove("left_active");
+              rightAlt.classList.remove("left_active");
+              rightCtrl.classList.add('left_active');
+              ctrl.classList.add('left_active');
+              left.classList.remove('left_active');
+              right.classList.remove('left_active');
+              down.classList.remove('left_active');
+        }
           break;
           case 18:
             del.classList.remove("del_a");
@@ -265,6 +427,24 @@ export function bottomKey() {
         down.classList.remove('left_active');
         up.classList.remove('left_active');
         ctrl.classList.remove('left_active');
+
+        alt.onclick = function() {
+          del.classList.remove("del_a");
+          backspace.classList.remove("left_active");
+          enter.classList.remove("left_active");
+          caps.classList.remove('left_active');
+          tab.classList.remove('left_active');
+          rightShift.classList.remove('left_active');
+          shift.classList.remove('left_active');
+          win.classList.remove("left_active");
+          rightCtrl.classList.remove('left_active');
+          rightAlt.classList.add("left_active");
+      alt.classList.add("left_active");
+      left.classList.remove('left_active');
+      down.classList.remove('left_active');
+      up.classList.remove('left_active');
+      ctrl.classList.remove('left_active');
+    }
           break;
           case 9:
             del.classList.remove("del_a");
@@ -280,6 +460,22 @@ export function bottomKey() {
          down.classList.remove('left_active');
          up.classList.remove('left_active');
          ctrl.classList.remove('left_active');
+
+            tab.onclick = function() {
+              del.classList.remove("del_a");
+              backspace.classList.remove("left_active");
+              enter.classList.remove("left_active");
+              caps.classList.remove('left_active');
+          tab.classList.add('left_active');
+          rightAlt.classList.remove("left_active");
+          rightShift.classList.remove('left_active');
+          rightCtrl.classList.remove('left_active');
+          shift.classList.remove('left_active');
+          left.classList.remove('left_active');
+          down.classList.remove('left_active');
+          up.classList.remove('left_active');
+          ctrl.classList.remove('left_active');
+        }
           break;
           case 20:
             del.classList.remove("del_a");
@@ -296,6 +492,23 @@ export function bottomKey() {
             down.classList.remove('left_active');
             up.classList.remove('left_active');
             ctrl.classList.remove('left_active');
+
+            caps.onclick = function() {
+              del.classList.remove("del_a");
+            backspace.classList.remove("left_active");
+            enter.classList.remove("left_active");
+         caps.classList.add('left_active');
+            tab.classList.remove('left_active');
+            rightAlt.classList.remove("left_active");
+            rightShift.classList.remove('left_active');
+            shift.classList.remove('left_active');
+            rightCtrl.classList.remove('left_active');
+            win.classList.remove('left_active');
+            left.classList.remove('left_active');
+            down.classList.remove('left_active');
+            up.classList.remove('left_active');
+            ctrl.classList.remove('left_active');
+        }
           break;   
           case 91:
             del.classList.remove("del_a");
@@ -313,6 +526,22 @@ export function bottomKey() {
             up.classList.remove('left_active');
             ctrl.classList.remove('left_active');
 
+            win.onclick = function() {
+              del.classList.remove("del_a");
+              backspace.classList.remove("left_active");
+              enter.classList.remove("left_active");
+              caps.classList.remove('left_active');
+              tab.classList.remove('left_active');
+              rightAlt.classList.remove("left_active");
+              rightShift.classList.remove('left_active');
+              shift.classList.remove('left_active');
+              rightCtrl.classList.remove('left_active');
+              win.classList.add('left_active');
+              left.classList.remove('left_active');
+              down.classList.remove('left_active');
+              up.classList.remove('left_active');
+              ctrl.classList.remove('left_active');
+        }
             break;  
                
         }
@@ -325,10 +554,6 @@ export function bottomKey() {
   
 
 
-  
-    //   document.onkeydown = function(event) {
-    //       console.log(event.keyCode);
-    //   }
 
 
 };

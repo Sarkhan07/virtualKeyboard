@@ -72,39 +72,9 @@ export function numKeyBoards() {
     });
 
 
-        // document.querySelectorAll('.keyboards .numKeys').forEach(function(element) {
-        //     element.onclick = function (event) {
-        //         document.querySelectorAll('.keyboards .numKeys').forEach(function(element) {
-        //             element.classList.remove('active');
-        //         });
-        
-        //         let code = this.getAttribute('title');
-        //         this.classList.add('active');
-        //         console.log(code);
-        //     }
-        
-        
-        // });
+     
 
 };
 
-
-
-// echo "# keyboard" >> README.md
-// git init
-// git add README.md
-// git commit -m "first commit"
-// git branch -M master
-// git remote add origin https://github.com/Sarkhan07/keyboard.git
-// git push -u origin master
-// git branch --set-upstream-to=origin/<branch> keys
-
-
-
-// const Nums = [];
-// document.onkeypress = function(event) {
-// 	Nums.push(event.charCode);
-// 	console.log(Nums)
-// }
 
 

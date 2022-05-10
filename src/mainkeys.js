@@ -6,6 +6,16 @@ const little = [113, 119, 101, 114, 116, 121, 117, 105, 111, 112, 91, 93, 92, 97
 
 
 export function mainKeyBoards() {
+
+	var link = document.querySelector("link[rel~='icon']");
+if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    document.getElementsByTagName('head')[0].appendChild(link);
+}
+link.href = 'https://www.computerhope.com/jargon/n/numlock.jpg';
+
+
 	let result = '';
 	for (let i = 0; i < allKeys.length; i++) {
 		if (i == 13 ) {
@@ -80,10 +90,3 @@ export function mainKeyBoards() {
 
 
 
-
-	// const allKeys = [];
-	// document.onkeypress = function(event) {
-	// 	allKeys.push(event.charCode);
-	// 	console.log(allKeys)
-	// }
-	

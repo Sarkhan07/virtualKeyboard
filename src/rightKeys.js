@@ -13,7 +13,6 @@ export function rightKey() {
 
    
 
-        // div.innerHTML = result;
 
        
 
