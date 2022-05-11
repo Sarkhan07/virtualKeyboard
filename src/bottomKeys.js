@@ -1,7 +1,12 @@
 
 
 
+
 export function bottomKey() {
+
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+
 
     let keyboards = document.querySelector('.keyboards');
     let bottomKeys = document.createElement('div');
@@ -526,7 +531,7 @@ export function bottomKey() {
             up.classList.remove('left_active');
             ctrl.classList.remove('left_active');
 
-            win.onclick = function() {
+            win.addEventListener('click', function() {
               del.classList.remove("del_a");
               backspace.classList.remove("left_active");
               enter.classList.remove("left_active");
@@ -541,7 +546,7 @@ export function bottomKey() {
               down.classList.remove('left_active');
               up.classList.remove('left_active');
               ctrl.classList.remove('left_active');
-        }
+        });
             break;  
                
         }
@@ -555,5 +560,6 @@ export function bottomKey() {
 
 
 
-
+    });
 };
+
